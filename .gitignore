@@ -1,3 +1,58 @@
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+.python-version
+.mypy_cache/
+.pytype/
+.pyre/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs and runtime outputs (per project rule: logs/ to centralize outputs)
+logs/
+*.log
+temp_images/
+92-图片-Pic/output/
+**/output/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Vector stores / indexes (runtime artifacts)
+**/saved_index/**
+**/index_store/**
+**/storage/**
+**/vector_store/**
+chroma/**
+faiss_index/**
+milvus_data/
+
+# Caches
+.cache/
+.huggingface/
+__pypackages__/
+
 # Python
 __pycache__/
 *.py[cod]

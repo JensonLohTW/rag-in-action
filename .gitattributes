@@ -1,0 +1,28 @@
+# Normalize line endings (LF across platforms)
+* text=auto eol=lf
+
+# Improve diffs for common text formats
+*.md text diff=markdown
+*.py text diff=python
+*.sh text
+
+# Notebooks: mark as documentation to reduce noise in language stats
+*.ipynb linguist-documentation=true
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+
+# Docs folder mainly documentation
+docs/** linguist-documentation=true
+
+# Optional: Use Git LFS for large binaries in the future
+# (Uncomment after `git lfs install` if you want to enable)
+# *.pdf filter=lfs diff=lfs merge=lfs -text
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.jpg filter=lfs diff=lfs merge=lfs -text
+# *.jpeg filter=lfs diff=lfs merge=lfs -text
+
